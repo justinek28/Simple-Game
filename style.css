@@ -1,35 +1,102 @@
-.container {
-  padding: 20px;
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('fonts/BebasNeue-webfont.eot');
+  src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/BebasNeue-webfont.woff') format('woff'),
+  url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+  url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.box {
-  background-image: url("game_off.png");
-  height: 150px;
-  width: 150px;
-  background-color: #FFFFFF;
-  margin-left: 10px;
-  margin-bottom: 10px;
+body {
+      content: '';
+    
+    background-image: url(barrels.jpg);
+    background: transparent url(pattern.png) repeat top left; 
 }
 
-.headerthing {
-  border-style: solid;
-  border-color: black;
-  height: 100px;
-  width: 100% ;
-  background-color: #FFFFFF;
-  margin-bottom: 10px;
+.sitefont li div h3 { 
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  padding: 0;
+  line-height: 100px; 
 }
-
-
-h1 {
-  center;
+/* Header Style */
+.headerImport{
+  font-family:"Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 10px;
+  padding: 3px 5px;
+  background: #000;
+  opacity: 0.9;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
 }
-
-.winner {
-  background-image: url("Win.png");
-
+.headerImport a{
+  line-height: 18px;
+  padding: 0 4px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #000;
+  color: #ddd;
 }
-
-.loser {
-  background-image: url("game_on.png");
+.headerImport a:hover{
+  color: #fff;
 }
+.headerImport a span{
+  font-weight: bold;
+}
+.headerImport span.right{
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  .headerImport a{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    text-shadow: none;
+  }
+  .headerImport span.right{
+    float: none;
+  }
+}
+  .container {
+    padding: 20px;
+  }
+
+  .box {
+    background-image: url("game_off.png");
+    height: 150px;
+    width: 150px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px !Important;
+  }
+
+  .headerthing {
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+    width: 100% ;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+
+  h1 {
+    center;
+  }
+
+  .winner {
+    background-image: url("Win.png");
+
+  }
+
+  .loser {
+    background-image: url("game_on.png");
+  }
