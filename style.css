@@ -1,0 +1,24 @@
+.container {
+  padding: 20px;
+}
+
+.box {
+  border: 2px solid dodgerblue;
+  height: 100px;
+  width: 100px;
+  background-color: #333;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: dodgerblue;
+}
+
+.winner {
+  background-color: green;
+}
+
+.loser {
+  background-color: red;
+}
