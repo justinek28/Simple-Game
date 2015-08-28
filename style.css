@@ -3,20 +3,33 @@
 }
 
 .box {
-  border: 2px solid dodgerblue;
-  height: 100px;
-  width: 100px;
-  background-color: #333;
+  background-image: url("game_off.png");
+  height: 150px;
+  width: 150px;
+  background-color: #FFFFFF;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
+.headerthing {
+  border-style: solid;
+  border-color: black;
+  height: 100px;
+  width: 100% ;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
 
+
+h1 {
+  center;
+}
 
 .winner {
-  background-color: green;
+  background-image: url("Win.png");
+
 }
 
 .loser {
-  background-color: red;
+  background-image: url("game_on.png");
 }
